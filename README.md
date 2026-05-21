@@ -33,8 +33,8 @@ git add .
 ```bash
 git commit -m "first commit"
 ```
-onliner updates for readme
-```bash
+onliner updates for readme    
+ ```bash  
 git add . && git commit -m "update readme.md"
 ```
 ```bash
