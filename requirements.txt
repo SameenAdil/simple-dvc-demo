@@ -1,5 +1,6 @@
 pandas
 dvc
 dvc[gdrive]
-sklearn 
 pyyaml
+argparse
+scikit-learn

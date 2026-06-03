@@ -1,6 +1,6 @@
-# read params
+# read params.yaml    
 # process (on these params)
-# read csv file and return dataframe
+# read csv file and return dataframe to load_data.py
  
 import os
 import yaml
@@ -9,12 +9,12 @@ import argparse
 
 
 
-def read_params(config_path):
+def read_params(config_path): #only get open params.yaml file
     with open(config_path) as yaml_file:
         config = yaml.safe_load(yaml_file)
     return config
 
-def get_data(config_path):
+def get_data(config_path): #get params.yaml + its csv file 
     config = read_params(config_path)
     #print(config)
     data_path = config["data_source"]["s3_source"]
@@ -39,4 +39,4 @@ if __name__ == "__main__":
 
     #args.parse_args return whole object(e.g box of item) but with .config we get only one item
     data = get_data(config_path=args.parse_args().config)# short form
-    
+    #print(data)
