@@ -4,3 +4,5 @@ dvc[gdrive]
 pyyaml
 argparse
 scikit-learn
+pytest
+tox
