@@ -85,4 +85,9 @@ build your own package on PYPI, command-
 ```bash
 python setup.py sdist bdist_wheel
 ``` 
+Run jupyter & Open, command -
+```bash
+pip install jupyterlab
 
+jupyter-lab notebook/ #   / use slash, to open directory 
+```
